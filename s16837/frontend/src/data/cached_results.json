@@ -1,0 +1,113 @@
+{
+    "high": {
+        "stationarity": {
+            "original": "Stationary",
+            "final": "Stationary",
+            "diff": 0
+        },
+        "ljung_box": {
+            "p_value": 1.9548267550430922e-300,
+            "status": "Problem ⚠️ (residual autocorrelation exists)"
+        },
+        "coefficients": [
+            {
+                "factor": "rainfall",
+                "effect": -1133.5587676588566,
+                "p_value": 0.5428621933160682,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            },
+            {
+                "factor": "humidity",
+                "effect": 44839.72810304832,
+                "p_value": 0.1321057926864916,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            },
+            {
+                "factor": "temperature",
+                "effect": 220586.9032517991,
+                "p_value": 0.06703283108475043,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            }
+        ],
+        "lr_test_p": 7.079426013660509e-06,
+        "confidence": "Low Confidence",
+        "analysis": "The model may not fully capture time patterns, so results should be interpreted carefully."
+    },
+    "medium": {
+        "stationarity": {
+            "original": "Stationary",
+            "final": "Stationary",
+            "diff": 0
+        },
+        "ljung_box": {
+            "p_value": 1.5846516193641928e-201,
+            "status": "Problem ⚠️ (residual autocorrelation exists)"
+        },
+        "coefficients": [
+            {
+                "factor": "rainfall",
+                "effect": 1915.4488373943175,
+                "p_value": 0.11148551296759124,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            },
+            {
+                "factor": "humidity",
+                "effect": 7680.317530711949,
+                "p_value": 0.7554785212007862,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            },
+            {
+                "factor": "temperature",
+                "effect": 307581.9829662108,
+                "p_value": 0.0013245178848476167,
+                "decision": "Reject H0",
+                "significance": "Significant"
+            }
+        ],
+        "lr_test_p": 1.0,
+        "confidence": "Low Confidence",
+        "analysis": "The model may not fully capture time patterns, so results should be interpreted carefully."
+    },
+    "low": {
+        "stationarity": {
+            "original": "Stationary",
+            "final": "Stationary",
+            "diff": 0
+        },
+        "ljung_box": {
+            "p_value": 1.0066706098313566e-260,
+            "status": "Problem ⚠️ (residual autocorrelation exists)"
+        },
+        "coefficients": [
+            {
+                "factor": "rainfall",
+                "effect": 994.7842945018577,
+                "p_value": 0.8094981618445998,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            },
+            {
+                "factor": "humidity",
+                "effect": 272373.2727612836,
+                "p_value": 8.382119790941341e-08,
+                "decision": "Reject H0",
+                "significance": "Significant"
+            },
+            {
+                "factor": "temperature",
+                "effect": 7178.170802098721,
+                "p_value": 0.6678459024457957,
+                "decision": "Fail to reject H0",
+                "significance": "Not Significant"
+            }
+        ],
+        "lr_test_p": 0.013240411125190846,
+        "confidence": "Low Confidence",
+        "analysis": "The model may not fully capture time patterns, so results should be interpreted carefully."
+    }
+}

@@ -1,0 +1,25 @@
+# Packages
+node_modules/
+*.rar
+*.zip
+*.pyd
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Next.js
+.next/
+out/
+build/
+# production
+trace
+*.sst
+
+# Large files
+*.tar.gz
+*.iso
+*.bin
