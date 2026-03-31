@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+/* ===== Leaflet CSS Import ===== */
+@import "leaflet/dist/leaflet.css";
+
+/* ===== Pure Light Theme: Forced Standards ===== */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #f2f2f7;
+  --foreground: #1d1d1f;
+  --secondary: #86868b;
+  --accent: #2d5a27;
+  --border: rgba(0, 0, 0, 0.05);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+}
+
+/* Force light behavior regardless of system settings */
+html, body {
+  background-color: white !important;
+  color: #1d1d1f !important;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  height: 100%;
+  /* Subtle Green Wash Background */
+  background-image: 
+    radial-gradient(circle at 50% -20%, rgba(45, 90, 39, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 100% 10%, rgba(45, 90, 39, 0.02) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Image Card Utility */
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f2f2f7;
+  cursor: pointer;
+}
+
+.image-card img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,0,0,0) 60%, rgba(0,0,0,0.6));
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.image-card:hover::after {
+  opacity: 1;
+}
+
+/* Alignment Helpers */
+.apple-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Premium Component styling without @apply for reliability */
+.premium-card {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+}
+
+.glass-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Button Refinement */
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.pill-button-primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.pill-button-primary:hover {
+  background-color: #3d7a36;
+  transform: scale(1.02);
+}
+
+.pill-button-secondary {
+  background-color: var(--surface);
+  color: var(--foreground);
+}
+
+.pill-button-secondary:hover {
+  background-color: #e5e5ea;
+}
+
+/* Map specific fixes */
+.leaflet-container {
+  background: white !important;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.leaflet-tile-pane {
+  filter: grayscale(0.1) brightness(1.02);
+}
+
+.map-district-path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: all 0.3s ease;
+}
+
+/* Typography Scale */
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  color: var(--foreground);
+}
+
+.hero-subhead {
+  font-size: 1.25rem;
+  color: var(--secondary);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d1d6;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aeaeb2;
+}

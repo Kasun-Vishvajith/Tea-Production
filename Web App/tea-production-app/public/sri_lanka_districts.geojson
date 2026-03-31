@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "NE",
+      "properties": { "name": "Nuwara Eliya", "elevation": ["HIGH"], "production_note": "Premium high-grown region." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.60, 7.10], [80.75, 7.12], [80.85, 7.05], [80.90, 6.90], [80.85, 6.75], [80.70, 6.75], [80.60, 6.85], [80.55, 7.00], [80.60, 7.10]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KND",
+      "properties": { "name": "Kandy", "elevation": ["HIGH", "MEDIUM"], "production_note": "Traditional mid-country tea." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.45, 7.45], [80.65, 7.42], [80.75, 7.30], [80.75, 7.12], [80.60, 7.10], [80.40, 7.05], [80.35, 7.20], [80.45, 7.45]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BD",
+      "properties": { "name": "Badulla", "elevation": ["HIGH", "MEDIUM"], "production_note": "Uva region character." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.85, 7.12], [81.10, 7.10], [81.20, 6.95], [81.15, 6.75], [80.95, 6.70], [80.85, 6.75], [80.90, 6.90], [80.85, 7.12]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RAT",
+      "properties": { "name": "Ratnapura", "elevation": ["MEDIUM", "LOW"], "production_note": "Sabaragamuwa low-grown." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.20, 7.05], [80.40, 7.05], [80.60, 7.10], [80.70, 6.75], [80.50, 6.60], [80.25, 6.50], [80.10, 6.70], [80.20, 7.05]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "GAL",
+      "properties": { "name": "Galle", "elevation": ["LOW"], "production_note": "Southern low-grown tea." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.05, 6.55], [80.25, 6.50], [80.50, 6.60], [80.40, 6.15], [80.20, 5.95], [80.00, 6.10], [80.05, 6.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MAT",
+      "properties": { "name": "Matara", "elevation": ["LOW"], "production_note": "Southern low-grown area." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.40, 6.15], [80.65, 6.20], [80.75, 6.05], [80.60, 5.90], [80.40, 5.95], [80.20, 5.95], [80.40, 6.15]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KAL",
+      "properties": { "name": "Kalutara", "elevation": ["LOW"], "production_note": "Western low-grown tea." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.85, 6.80], [80.10, 6.70], [80.25, 6.50], [80.05, 6.55], [79.90, 6.40], [79.80, 6.60], [79.85, 6.80]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "KEG",
+      "properties": { "name": "Kegalle", "elevation": ["MEDIUM", "LOW"], "production_note": "Sabaragamuwa mid-grown." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.10, 7.45], [80.45, 7.45], [80.35, 7.20], [80.40, 7.05], [80.20, 7.05], [80.10, 7.20], [80.10, 7.45]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MATL",
+      "properties": { "name": "Matale", "elevation": ["MEDIUM"], "production_note": "Matale mid-grown region." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.55, 7.70], [80.75, 7.72], [80.80, 7.55], [80.75, 7.30], [80.65, 7.42], [80.45, 7.45], [80.55, 7.70]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "MON",
+      "properties": { "name": "Monaragala", "elevation": ["LOW", "MEDIUM"], "production_note": "Uva low-grown region." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[81.15, 6.75], [81.40, 6.80], [81.50, 6.60], [81.30, 6.40], [81.05, 6.45], [80.95, 6.70], [81.15, 6.75]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HAM",
+      "properties": { "name": "Hambantota", "elevation": ["LOW"], "production_note": "Minor southern region." },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.75, 6.05], [81.10, 6.15], [81.40, 6.15], [81.30, 5.90], [81.00, 5.85], [80.75, 6.05]]]
+      }
+    }
+  ]
+}
