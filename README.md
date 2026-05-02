@@ -8,9 +8,9 @@ It brings together information about different regions, elevations, and tea type
 
 What you can explore
 
-• Production trends across different regions
-• Differences between high, medium, and low-grown tea
-• Basic insights into tea types and processing methods
-• A clean and simple interface for easy navigation
+- Production trends across different regions
+- Differences between high, medium, and low-grown tea
+- Basic insights into tea types and processing methods
+- A clean and simple interface for easy navigation
 
 This project focuses on making data more accessible and easier to understand for anyone interested in the Sri Lankan tea industry.
