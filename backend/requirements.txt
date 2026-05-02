@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+numpy
+joblib
+statsmodels
+catboost
+pydantic
+python-multipart
