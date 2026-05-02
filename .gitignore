@@ -52,6 +52,4 @@ Thumbs.db
 
 # Project specific
 cached_results.json
-Dataset/
-Model/
-Inference Model/
+
